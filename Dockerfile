@@ -8,8 +8,7 @@ ENV TZ=Europe/Berlin
 RUN apt-get update && apt-get install -y \
     scanbd \
     sane \
-    sane-utils \
-    sane-fujitsu
+    sane-utils
 
 # SANED für Netzwerkzugriff konfigurieren
 # RUN sed -i 's/^#saned.*/saned:ALL/' /etc/sane.d/saned.conf
